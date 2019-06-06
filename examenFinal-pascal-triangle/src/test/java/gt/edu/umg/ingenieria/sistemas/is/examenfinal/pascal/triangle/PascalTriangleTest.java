@@ -87,7 +87,7 @@ public class PascalTriangleTest {
 
         // when
         PascalTriangle ejecucion = new PascalTriangle();
-        String actualResult = "Es valor negativo";
+        String actualResult = ejecucion.build(input);
 
         // then
         assertEquals(expectedResult, actualResult);
@@ -100,12 +100,12 @@ public class PascalTriangleTest {
         System.out.println("TEST #4- No permite letras");
 
         // given
-        int input = -5;
-        String expectedResult = Arrays.toString(new long[0]);
+        String input = "ab";
+        String expectedResult = "No permite letras";
 
         // when
         PascalTriangle ejecucion = new PascalTriangle();
-        String actualResult = "No permite letras";
+        String actualResult = ejecucion.build(input);
 
         // then
         assertEquals(expectedResult, actualResult);
