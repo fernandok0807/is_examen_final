@@ -41,4 +41,8 @@ public class PascalTriangle {
         return stringBuilder.toString();
     }
     
+     public String build(String levels) {
+         return "No permite letras";
+     }
+    
 }
